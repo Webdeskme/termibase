@@ -1,0 +1,22 @@
+const inquirer      = require('inquirer');
+inquirer.prompt([
+     {
+    type: 'input',
+    name: 'name',
+    message: "What's your name?",
+    default: function() {
+      return 'Bill';
+    }
+   }
+  ,{
+    type: 'input',
+    name: 'day',
+    message: "What day is it?",
+    default: function() {
+      return 'Monday';
+    }
+   }
+ ])
+ .then(answers => {
+   console.log("Hi " + answers.name + "! Is it realy " + answers.day + "?!!");
+ });

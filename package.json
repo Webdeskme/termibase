@@ -1,0 +1,35 @@
+{
+  "name": "termibase",
+  "version": "0.0.1",
+  "description": "CLI Managment for WebFrame.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Webdeskme/termibase.git"
+  },
+  "keywords": [
+    "CLI",
+    "WebFrame"
+  ],
+  "author": "Adam W. Telford",
+  "bin": {
+    "termibase": "./index.js",
+    "termibase_install": "./install.js"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Webdeskme/termibase/issues"
+  },
+  "homepage": "https://github.com/Webdeskme/termibase#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "commander": "^2.20.0",
+    "figlet": "^1.2.3",
+    "fs-extra": "^8.0.1",
+    "inquirer": "^6.4.0"
+  }
+}

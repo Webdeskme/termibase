@@ -29,7 +29,7 @@ inquirer
     }
   ])
   .then(answers => {
-    var con = "#Writen by: " + answers.name;
+    var con = "//Writen by: " + answers.name + "\n";
     con += "const chalk = require('chalk');\n";
     con += "const clear = require('clear');\n";
     con += "const figlet = require('figlet');\n";
@@ -53,7 +53,7 @@ inquirer
     con += "    type: 'list',\n";
     con += "    name: 'something',\n";
     con += "    message: 'What choise do you want?',\n";
-    con += "    choices: ['a', 'b', '// COMBAK: ']\n";
+    con += "    choices: ['a', 'b', 'c']\n";
     con += "    }\n";
     con += "  ])\n";
     con += ".then(answers => {\n";

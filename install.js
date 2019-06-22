@@ -84,7 +84,7 @@ con += "else if(answers.apps === '" + files[x] + "'){require(apps + '" + files[x
 }
 con += "});}";
 //console.log(con);
-fs.copySync('node_modules', apps + 'node_modules');
+fs.copySync('node_copy', apps + 'node_modules');
 fs.writeFile(__dirname + '/index.js', con, function (err) {
   if (err) throw err;
   console.log('Installed!');

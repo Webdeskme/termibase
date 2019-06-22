@@ -15,7 +15,6 @@ console.log("");
 console.log(chalk.cyan.bold('Welcome to TermiBase!'));
 console.log(chalk.yellow('Please type "TermiBase -h" to see all the installed commands and apps.'));
 console.log("");
-var inquirer = require('inquirer');
 inquirer
   .prompt([
     {
@@ -42,7 +41,6 @@ inquirer
     con += "console.log('');\n";
     con += "console.log(chalk.cyan.bold('Welcome to " + answers.title + "!'));\n";
     con += "console.log('');\n";
-    con += "var inquirer = require('inquirer');\n";
     con += "inquirer\n";
     con += "  .prompt([\n";
     con += "  {\n";

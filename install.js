@@ -21,15 +21,6 @@ console.log("Installing ...");
 console.log("");
 fs.emptyDirSync(apps);
 fs.copySync(dh_term, apps);
-/*fs.emptyDir(apps, err => {
-  if (err) return console.error(err)
-
-  console.log('Clean Folder')
-})
-fs.copy(dh_term, apps, err => {
-  if (err) return console.error(err)
-  console.log('Coppied Files!');
-});*/
 var files = fs.readdirSync(apps);
 var con = "#!/usr/bin/env node\n";
 con += "const chalk = require('chalk');\n";
@@ -52,12 +43,14 @@ con += "console.log(chalk.yellow('Please type " + '"TermiBase -h"' + " to see al
 con += "console.log('');\n";
 con += "program.version('0.1.0');\n";
 con += "program.option('-m, --market', 'Market link of terminal apps.');\n";
+con += "program.option('-n, --init', 'Start a new application.');\n";
 var x;
 for(x in files){
   con += "program.option('--" + files[x] + "');\n";
 }
-con += "program.option('-i, --installer', 'App installer').parse(process.argv);\n";
+con += "program.option('-i, --installer', 'App installer.').parse(process.argv);\n";
 con += "if (program.market){ require(__dirname + '/market.js');}\n";
+con += "else if (program.init) {require(__dirname + '/init.js');}";
 con += "else if (program.installer){ require(__dirname + '/installer.js');}\n";
 x = 0;
 for(x in files){
@@ -68,7 +61,7 @@ con += "inquirer.prompt([{\n";
 con += "type: 'list',\n";
 con += "name: 'apps',\n";
 con += "message: 'What app do you want to open?',\n";
-con += "choices: ['market', 'installer'";
+con += "choices: ['market', 'init', 'installer'";
 x = 0;
 for(x in files){
   con += ", '" + files[x] + "'";

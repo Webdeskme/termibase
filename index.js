@@ -6,7 +6,7 @@ const inquirer = require('inquirer');
 const program = require('commander');
 var fs = require('fs-extra');
 const dh_homedir = require('os').homedir();
-var dh_term = dh_homedir + '/Documents/termibase/';
+var dh_term = dh_homedir + '/Documents/TermiBase/';
 if (!fs.existsSync(dh_term)) {fs.mkdirSync(dh_term);}
 var apps = __dirname + '/apps/';
 if (!fs.existsSync(apps)) {fs.mkdirSync(apps);}

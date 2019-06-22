@@ -30,6 +30,6 @@
     "commander": "^2.20.0",
     "figlet": "^1.2.3",
     "fs-extra": "^8.0.1",
-    "inquirer": "^6.4.0"
+    "inquirer": "^6.4.1"
   }
 }

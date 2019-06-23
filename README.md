@@ -9,7 +9,7 @@ Our mission is to create software that protects users' privacy and data while al
 
 ## License:
 Webfra-me/Webfra-me is licensed under the GNU General Public License v3.0
-[Webfra-me/LICENSE](https://github.com/Webfra-me/Webfra-me/blob/master/LICENSE)
+[termibase/LICENSE](https://github.com/Webdeskme/termibase/blob/master/LICENSE)
 
 ## Prerequisites:
 * Termibase requires node and npm.
@@ -20,7 +20,7 @@ Webfra-me/Webfra-me is licensed under the GNU General Public License v3.0
 * npm i termibase -g
 
 ## Usage:
-To learn more please visit Webframe's [wiki](https://github.com/Webfra-me/Webfra-me/wiki).
+To learn more please visit Webframe's [wiki](https://github.com/Webdeskme/termibase/wiki).
 
 ## Contributing:
 Please read [Webfra-me/CONTRIBUTING.md]( https://github.com/Webfra-me/Webfra-me/blob/master/CONTRIBUTING.md ) to learn our guidelines for contributing.
@@ -29,4 +29,4 @@ Please read [Webfra-me/CONTRIBUTING.md]( https://github.com/Webfra-me/Webfra-me/
 Please read [Webfra-me/community-covenant.md]( https://github.com/Webfra-me/Webfra-me/blob/master/code_of_conduct.md ).
 
 ## Known Bugs:
-There are no known bugs at this time warranting attention here. For a list off all issues past and present, please visit our [issues](https://github.com/Webfra-me/Webfra-me/issues) page.
+There are no known bugs at this time warranting attention here. For a list off all issues past and present, please visit our [issues](https://github.com/Webdeskme/termibase/issues) page.

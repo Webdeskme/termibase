@@ -25,7 +25,7 @@ console.log("");
 console.log(chalk.cyan.bold('Welcome to TermiBase!'));
 console.log(chalk.yellow('Please type "TermiBase -h" to see all the installed commands and apps.'));
 console.log("");
-program.version('0.1.8');
+program.version('0.2.0');
 program.option('-m, --market', 'Market link of terminal apps.');
 program.option('-n, --init', 'Start a new application.');
 program.option('-i, --installer', 'App installer').parse(process.argv);

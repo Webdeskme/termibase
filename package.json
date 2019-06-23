@@ -30,6 +30,8 @@
     "clear": "^0.1.0",
     "clui": "^0.3.6",
     "commander": "^2.20.0",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.17.1",
     "figlet": "^1.2.3",
     "fs-extra": "^8.0.1",
     "inquirer": "^6.4.1"

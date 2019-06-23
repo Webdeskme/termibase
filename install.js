@@ -41,7 +41,7 @@ con += "console.log('');\n";
 con += "console.log(chalk.cyan.bold('Welcome to TermiBase!'));\n";
 con += "console.log(chalk.yellow('Please type " + '"TermiBase -h"' + " to see all the installed commands and apps.'));\n";
 con += "console.log('');\n";
-con += "program.version('0.1.4');\n";
+con += "program.version('0.1.5');\n";
 con += "program.option('-m, --market', 'Market link of terminal apps.');\n";
 con += "program.option('-n, --init', 'Start a new application.');\n";
 var x;

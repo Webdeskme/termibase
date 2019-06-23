@@ -52,7 +52,7 @@ inquirer
     con += "  {\n";
     con += "    type: 'list',\n";
     con += "    name: 'something',\n";
-    con += "    message: 'What choise do you want?',\n";
+    con += "    message: 'What choice do you want?',\n";
     con += "    choices: ['a', 'b', 'c']\n";
     con += "    }\n";
     con += "  ])\n";

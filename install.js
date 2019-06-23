@@ -21,7 +21,7 @@ console.log(chalk.yellow('Please type "TermiBase -h" to see all the installed co
 console.log("");
 console.log("Installing ...");
 console.log("");
-var thisProgressBar = new Progress(20);
+var thisPercentBar = new Progress(20);
 console.log(thisPercentBar.update(0.0));
 fs.emptyDirSync(apps);
 console.log(thisPercentBar.update(0.1));
@@ -48,7 +48,7 @@ con += "console.log('');\n";
 con += "console.log(chalk.cyan.bold('Welcome to TermiBase!'));\n";
 con += "console.log(chalk.yellow('Please type " + '"TermiBase -h"' + " to see all the installed commands and apps.'));\n";
 con += "console.log('');\n";
-con += "program.version('0.1.6');\n";
+con += "program.version('0.1.8');\n";
 con += "program.option('-m, --market', 'Market link of terminal apps.');\n";
 con += "program.option('-n, --init', 'Start a new application.');\n";
 var x;

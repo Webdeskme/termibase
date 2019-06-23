@@ -70,6 +70,7 @@ con += "]\n";
 con += "}])\n";
 con += ".then(answers => {\n";
 con += "if(answers.apps === 'market'){require(__dirname + '/market.js');}\n";
+con += "else if(answers.apps === 'init'){require(__dirname + '/init.js');}\n";
 con += "else if(answers.apps === 'installer'){require(__dirname + '/installer.js');}\n";
 x = 0;
 for(x in files){

@@ -7,7 +7,6 @@ var fs = require('fs-extra');
 const dh_homedir = require('os').homedir();
 var clui = require('clui');
 var Progress = clui.Progress;
-var thisProgressBar = new Progress(20);
 var dh_term = dh_homedir + '/Documents/TermiBase/';
 var apps = __dirname + "/apps/";
 clear();
@@ -22,6 +21,7 @@ console.log(chalk.yellow('Please type "TermiBase -h" to see all the installed co
 console.log("");
 console.log("Installing ...");
 console.log("");
+var thisProgressBar = new Progress(20);
 console.log(thisPercentBar.update(0.0));
 fs.emptyDirSync(apps);
 console.log(thisPercentBar.update(0.1));

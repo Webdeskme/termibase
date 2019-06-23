@@ -12,7 +12,8 @@
   },
   "keywords": [
     "CLI",
-    "WebFrame"
+    "WebFrame",
+    "Terminal"
   ],
   "author": "Adam W. Telford",
   "bin": {
@@ -23,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/Webdeskme/termibase/issues"
   },
-  "homepage": "https://github.com/Webdeskme/termibase#readme",
+  "homepage": "http://termibase.webfra.me",
   "dependencies": {
     "chalk": "^2.4.2",
     "clear": "^0.1.0",

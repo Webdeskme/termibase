@@ -19,11 +19,6 @@ Webfra-me/Webfra-me is licensed under the GNU General Public License v3.0
 ## Installation:
 * npm i termibase -g
 
-## Simple Installation on a Debian system without an existing web server.
-In your terminal type:
-  * wget "http://webfra.me/wd_deb.sh"
-  * sh wd_deb.sh
-
 ## Usage:
 To learn more please visit Webframe's [wiki](https://github.com/Webfra-me/Webfra-me/wiki).
 

@@ -34,6 +34,7 @@
     "express": "^4.17.1",
     "figlet": "^1.2.3",
     "fs-extra": "^8.0.1",
-    "inquirer": "^6.4.1"
+    "inquirer": "^6.4.1",
+    "wget-improved": "^3.0.2"
   }
 }

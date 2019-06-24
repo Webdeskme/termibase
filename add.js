@@ -44,4 +44,8 @@ inquirer.prompt([
     // code to show progress bar
     console.log(thisPercentBar.update(1.0));
   });
+  console.log("");
+  console.log('You can find the app at: "' + dh_homedir + '/Documents/TermiBase/' + answers.app + '"');
+  console.log("");
+  console.log(chalk.yellow('Dont forget to run "termibase_install" after your download finishes.'));
 });

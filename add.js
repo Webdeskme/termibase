@@ -6,6 +6,7 @@ var clui = require('clui');
 var Progress = clui.Progress;
 var thisPercentBar = new Progress(20);
 var fs = require('fs-extra');
+const wget = require('wget-improved');
 const dh_homedir = require('os').homedir();
 clear();
 console.log(

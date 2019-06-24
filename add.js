@@ -26,7 +26,7 @@ inquirer.prompt([
 }
   ])
   .then(answers => {
-    const src = 'https://raw.githubusercontent.com/Webdeskme/termibase_market/master/' + answers.app;
+    const src = 'https://raw.githubusercontent.com/Webdeskme/termibase_market/master/market/' + answers.app;
   const output = dh_homedir + '/Documents/TermiBase/' + answers.app;
   const options = {};
   let download = wget.download(src, output, options);

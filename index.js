@@ -25,16 +25,16 @@ console.log("");
 console.log(chalk.cyan.bold('Welcome to TermiBase!'));
 console.log(chalk.yellow('Please type "TermiBase -h" to see all the installed commands and apps.'));
 console.log("");
-program.version('0.3.0');
+program.version('0.3.1');
 program.option('-m, --market', 'Market link of terminal apps.');
 program.option('-a, --add', 'Add an application from the market.');
 program.option('-n, --init', 'Start a new application.');
 program.option('-i, --installer', 'App installer').parse(process.argv);
 
-if (program.market){ require("./market.js");}
-else if (program.add) {require("./add.js");}
-else if (program.init) {require("./init.js");}
-else if (program.installer) {require("./instalsler.js");}
+if (program.market){ require(__dirname + "/market.js");}
+else if (program.add) {require(__dirname + "/add.js");}
+else if (program.init) {require(__dirname + "/init.js");}
+else if (program.installer) {require(__dirname + "/instalsler.js");}
 else{
 	inquirer.prompt([
 	  {

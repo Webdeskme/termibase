@@ -25,12 +25,14 @@ console.log("");
 console.log(chalk.cyan.bold('Welcome to TermiBase!'));
 console.log(chalk.yellow('Please type "TermiBase -h" to see all the installed commands and apps.'));
 console.log("");
-program.version('0.2.2');
+program.version('0.3.0');
 program.option('-m, --market', 'Market link of terminal apps.');
+program.option('-a, --add', 'Add an application from the market.');
 program.option('-n, --init', 'Start a new application.');
 program.option('-i, --installer', 'App installer').parse(process.argv);
 
 if (program.market){ require("./market.js");}
+else if (program.add) {require("./add.js");}
 else if (program.init) {require("./init.js");}
 else if (program.installer) {require("./instalsler.js");}
 else{
@@ -39,12 +41,15 @@ else{
 	      type: 'list',
 	      name: 'apps',
 	      message: 'What app do you want to open?',
-	      choices: ['market', 'init', 'installer']
+	      choices: ['market', 'add', 'init', 'installer']
 	}
 	  ])
 	  .then(answers => {
 	    if(answers.apps === 'market'){
 	      require(__dirname + '/market.js');
+	    }
+      else if(answers.apps === 'add'){
+	      require(__dirname + '/add.js');
 	    }
       else if(answers.apps === 'init'){
 	      require(__dirname + '/init.js');

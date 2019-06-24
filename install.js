@@ -48,8 +48,9 @@ con += "console.log('');\n";
 con += "console.log(chalk.cyan.bold('Welcome to TermiBase!'));\n";
 con += "console.log(chalk.yellow('Please type " + '"TermiBase -h"' + " to see all the installed commands and apps.'));\n";
 con += "console.log('');\n";
-con += "program.version('0.2.2');\n";
+con += "program.version('0.3.0');\n";
 con += "program.option('-m, --market', 'Market link of terminal apps.');\n";
+con += "program.option('-a, --add', 'Add an application from the market.');\n";
 con += "program.option('-n, --init', 'Start a new application.');\n";
 var x;
 for(x in files){
@@ -57,7 +58,8 @@ for(x in files){
 }
 con += "program.option('-i, --installer', 'App installer.').parse(process.argv);\n";
 con += "if (program.market){ require(__dirname + '/market.js');}\n";
-con += "else if (program.init) {require(__dirname + '/init.js');}";
+con += "else if (program.add) {require("./add.js");}\n";
+con += "else if (program.init) {require(__dirname + '/init.js');}\n";
 con += "else if (program.installer){ require(__dirname + '/installer.js');}\n";
 console.log(thisPercentBar.update(0.5));
 x = 0;
@@ -69,7 +71,7 @@ con += "inquirer.prompt([{\n";
 con += "type: 'list',\n";
 con += "name: 'apps',\n";
 con += "message: 'What app do you want to open?',\n";
-con += "choices: ['market', 'init', 'installer'";
+con += "choices: ['market', 'add', 'init', 'installer'";
 x = 0;
 for(x in files){
   con += ", '" + files[x] + "'";
@@ -78,6 +80,7 @@ con += "]\n";
 con += "}])\n";
 con += ".then(answers => {\n";
 con += "if(answers.apps === 'market'){require(__dirname + '/market.js');}\n";
+con += "else if(answers.apps === 'add'){require(__dirname + '/add.js');}\n";
 con += "else if(answers.apps === 'init'){require(__dirname + '/init.js');}\n";
 con += "else if(answers.apps === 'installer'){require(__dirname + '/installer.js');}\n";
 x = 0;

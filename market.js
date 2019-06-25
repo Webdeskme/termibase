@@ -23,6 +23,8 @@ console.log("To install just download the desired app into your Termibase folder
 console.log("The finish the install with command 'termibase_install'");
 console.log("");
 console.log("");
+console.log(chalk.yellow("Market Applications:"));
+console.log("");
 var file = fs.readFileSync(__dirname + "/market.json");
 file = JSON.parse(file);
 var x;

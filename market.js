@@ -27,5 +27,5 @@ var file = fs.readSync(__dirname + "/market.json");
 file = JSON.parse(file);
 var x;
 for(x in file){
-  console.log(x + ": " + file[x]["d"] " -- By: " + file[x]["a"] + "->v" + file[x]["v"]);
+  console.log(x + ": " + file[x]["d"] + " -- By: " + file[x]["a"] + "->v" + file[x]["v"]);
 }

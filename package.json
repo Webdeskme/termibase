@@ -1,6 +1,6 @@
 {
   "name": "termibase",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "CLI Managment for WebFrame.",
   "main": "index.js",
   "scripts": {

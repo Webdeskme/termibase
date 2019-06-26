@@ -6,8 +6,8 @@ const inquirer      = require('inquirer');
 const program = require('commander');
 var fs = require('fs-extra');
 const dh_homedir = require('os').homedir();
-if (!fs.existsSync(dh__homedir + '/Documents/')) {
-        fs.mkdirSync(dh__homedir + '/Documents/');
+if (!fs.existsSync(dh_homedir + '/Documents/')) {
+        fs.mkdirSync(dh_homedir + '/Documents/');
 }
 var dh_term = dh_homedir + '/Documents/TermiBase/';
 if (!fs.existsSync(dh_term)) {
@@ -28,7 +28,7 @@ console.log("");
 console.log(chalk.cyan.bold('Welcome to TermiBase!'));
 console.log(chalk.yellow('Please type "TermiBase -h" to see all the installed commands and apps.'));
 console.log("");
-program.version('0.5.1');
+program.version('0.5.2');
 program.option('-m, --market', 'Market link of terminal apps.');
 program.option('-a, --add', 'Add an application from the market.');
 program.option('-n, --init', 'Start a new application.');

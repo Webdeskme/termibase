@@ -67,6 +67,6 @@ inquirer
     console.log("application location: " + dh_term + answers.title);
     console.log("");
     console.log("To use the app. You must install it.");
-    console.log("Install with: 'termibase_install'.");
+    console.log("Install with: 'sudo termibase_install'.");
     console.log("");
   });

@@ -47,5 +47,5 @@ inquirer.prompt([
   console.log("");
   console.log('You can find the app at: "' + dh_homedir + '/Documents/TermiBase/' + answers.app + '"');
   console.log("");
-  console.log(chalk.yellow('Dont forget to run "termibase_install" after your download finishes.'));
+  console.log(chalk.yellow('Dont forget to run "sudo termibase_install" after your download finishes.'));
 });

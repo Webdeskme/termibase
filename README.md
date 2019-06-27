@@ -1,8 +1,7 @@
 # Welcome to Termibase
 ### A terminal application environment for housing, exploring, and creating terminal applications.
 
-[npm](https://www.npmjs.com/package/termibase)
-[GitHub](https://github.com/Webdeskme/termibase)
+[npm](https://www.npmjs.com/package/termibase) -- [GitHub](https://github.com/Webdeskme/termibase)
 
 ## Our Vision:
 Our vision is to allow everyone to control, create, and use their data easily and safely.

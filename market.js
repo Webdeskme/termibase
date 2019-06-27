@@ -32,7 +32,7 @@ var file = fs.readFileSync(__dirname + "/market.json");
 file = JSON.parse(file);
 var table = new Table({
     head: ['app', 'description', 'author', 'version']
-  , colWidths: [100, 200, 100, 100]
+  //, colWidths: [100, 200, 100, 100]
 });
 var x;
 for(x in file){

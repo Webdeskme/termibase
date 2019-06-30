@@ -1,4 +1,7 @@
 # Welcome to Termibase
+
+[![Join the chat at https://gitter.im/termibase/community](https://badges.gitter.im/termibase/community.svg)](https://gitter.im/termibase/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ### A terminal application environment for housing, exploring, and creating terminal applications.
 
 [npm](https://www.npmjs.com/package/termibase) -- [GitHub](https://github.com/Webdeskme/termibase)

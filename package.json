@@ -1,6 +1,6 @@
 {
   "name": "termibase",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "description": "Termibase for your terminal application managment.",
   "main": "index.js",
   "scripts": {

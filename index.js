@@ -32,11 +32,23 @@ program.version('0.5.4');
 program.option('-m, --market', 'Market link of terminal apps.');
 program.option('-a, --add', 'Add an application from the market.');
 program.option('-n, --init', 'Start a new application.');
+var x;
+var y;
+for(x in files){
+  program.option('--'+files[x]);
+}
 program.option('-i, --installer', 'App installer').parse(process.argv);
 
 if (program.market){ require(__dirname + "/market.js");}
 else if (program.add) {require(__dirname + "/add.js");}
 else if (program.init) {require(__dirname + "/init.js");}
+x = 0;
+for(x in files){
+	y = files[x];
+  if(program.y){
+    require(apps + files[x]);
+  }
+}
 else if (program.installer) {require(__dirname + "/instalsler.js");}
 else{
 	inquirer.prompt([

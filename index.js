@@ -40,8 +40,8 @@ for(x in files){
 program.option('-i, --installer', 'App installer').parse(process.argv);
 
 if (program.market){ require(__dirname + "/market.js");}
-else if (program.add) {require(__dirname + "/add.js");}
-else if (program.init) {require(__dirname + "/init.js");}
+if (program.add) {require(__dirname + "/add.js");}
+if (program.init) {require(__dirname + "/init.js");}
 x = 0;
 for(x in files){
 	y = files[x];
@@ -49,8 +49,8 @@ for(x in files){
     require(apps + files[x]);
   }
 }
-else if (program.installer) {require(__dirname + "/instalsler.js");}
-else{
+if (program.installer) {require(__dirname + "/instalsler.js");}
+if (program){
 	inquirer.prompt([
 	  {
 	      type: 'list',

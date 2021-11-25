@@ -25,16 +25,17 @@ console.log(
   )
 );
 console.log("");
-console.log(chalk.cyan.bold('Welcome to TermiBase!'));
+console.log(chalk.cyan.bold('Welcome to TermiBase!!!!!'));
 console.log(chalk.yellow('Please type "TermiBase -h" to see all the installed commands and apps.'));
 console.log("");
-program.version('0.5.4');
+program.version('0.5.8');
 program.option('-m, --market', 'Market link of terminal apps.');
 program.option('-a, --add', 'Add an application from the market.');
 program.option('-n, --init', 'Start a new application.');
-var x;
+//var x;
 var y;
-for(x in files){
+//for(x in files){
+for (let x = 0; x < files.length; x++) {
   program.option('--'+files[x]);
 }
 program.option('-i, --installer', 'App installer').parse(process.argv);
@@ -43,7 +44,8 @@ if (program.market){ require(__dirname + "/market.js");}
 if (program.add) {require(__dirname + "/add.js");}
 if (program.init) {require(__dirname + "/init.js");}
 x = 0;
-for(x in files){
+//for(x in files){
+for (let x = 0; x < files.length; x++) {
 	y = files[x];
   if(program.y){
     require(apps + files[x]);
